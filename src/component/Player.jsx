@@ -38,7 +38,7 @@ const directionOffset = ({ forward, backward, left, right }) => {
 
 function Player() {
   const { forward, backward, left, right } = useInput();
-  const model = useGLTF("./models/player.glb");
+  const model = useGLTF( process.env.PUBLIC_URL + "/models/player.glb");
   const { actions } = useAnimations(model.animations, model.scene);
 
   model.scene.scale.set(.0022, .0022, .0022);
