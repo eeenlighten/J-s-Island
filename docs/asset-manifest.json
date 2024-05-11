@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/J-s-Island/static/css/main.19f15362.css",
-    "main.js": "/J-s-Island/static/js/main.8c4f4adc.js",
+    "main.js": "/J-s-Island/static/js/main.7840d0f6.js",
     "static/media/rnLogo.svg": "/J-s-Island/static/media/rnLogo.9d53db72a728f42978cb6e4bdfa1e96c.svg",
     "static/media/sbLogo.svg": "/J-s-Island/static/media/sbLogo.cd90c88f831b79d67593fe13c7cdb9b7.svg",
     "static/media/googleLogo.svg": "/J-s-Island/static/media/googleLogo.5a8732677d93d8055491846573859109.svg",
@@ -14,10 +14,10 @@
     "static/media/htmlLogo.svg": "/J-s-Island/static/media/htmlLogo.d19fb3cdf23384bb812a3413e934a071.svg",
     "static/media/closeX.svg": "/J-s-Island/static/media/closeX.d1cb1b4127117d6908bbb481e5b6f3ef.svg",
     "main.19f15362.css.map": "/J-s-Island/static/css/main.19f15362.css.map",
-    "main.8c4f4adc.js.map": "/J-s-Island/static/js/main.8c4f4adc.js.map"
+    "main.7840d0f6.js.map": "/J-s-Island/static/js/main.7840d0f6.js.map"
   },
   "entrypoints": [
     "static/css/main.19f15362.css",
-    "static/js/main.8c4f4adc.js"
+    "static/js/main.7840d0f6.js"
   ]
 }
