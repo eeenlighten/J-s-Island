@@ -61,7 +61,7 @@ export function Scene() {
       <Ground />
       <SubIsland />
       <MainIsland />
-      <Boat />
+      {/* <Boat /> */}
       <Player />
       <AudioPlay />
       <BloomLight />
