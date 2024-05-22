@@ -39,7 +39,6 @@ export function Scene() {
   }, [start]);
 
     useEffect(() => {
-      console.log('asdf::', cameraRef.current)
         if (cameraRef.current) {
             gsap.to(cameraRef.current.position, {
                 duration: 5.9,
@@ -47,9 +46,6 @@ export function Scene() {
                 y: 10,
                 z: 10,
                 ease: "power4.inOut",
-                // onComplete: () => {
-                //   cameraRef.current.lookAt(new THREE.Vector3(0, 0, 0)); // 밑을 보도록 설정
-                // }
             });
         }
     }, [cameraRef.current]);

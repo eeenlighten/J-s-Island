@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/J-s-Island/static/css/main.cfa0331a.css",
-    "main.js": "/J-s-Island/static/js/main.676f18e5.js",
+    "main.js": "/J-s-Island/static/js/main.14a5d3d1.js",
     "static/media/rnLogo.svg": "/J-s-Island/static/media/rnLogo.60c9c2f41924b4d6a8a1ae4314eb00e6.svg",
     "static/media/sbLogo.svg": "/J-s-Island/static/media/sbLogo.a9a7239fa85afdaa909bea2728e68d97.svg",
     "static/media/mysqlLogo.svg": "/J-s-Island/static/media/mysqlLogo.7746fe959c3aa4ec62b3489494749cf8.svg",
     "static/media/mariaDbLogo.svg": "/J-s-Island/static/media/mariaDbLogo.7465019070f35838921a8210cf25550a.svg",
     "static/media/googleLogo.svg": "/J-s-Island/static/media/googleLogo.da6c76ae31db35d04e961a2f257dcb4a.svg",
+    "index.html": "/J-s-Island/index.html",
     "static/media/githubLogo.svg": "/J-s-Island/static/media/githubLogo.e1a278bbdd27fc9e9714c4f10073c668.svg",
     "static/media/internetLogo.svg": "/J-s-Island/static/media/internetLogo.82f21938ae0c975fa268590d42fb97fe.svg",
     "static/media/javaLogo.svg": "/J-s-Island/static/media/javaLogo.bac138eb9f2f328e1a6376cc0bd8a2e7.svg",
     "static/media/jsLogo.svg": "/J-s-Island/static/media/jsLogo.27c94e99323e833f02ce65a1f0c1b8c4.svg",
     "static/media/tsLogo.svg": "/J-s-Island/static/media/tsLogo.f5ec53066ffcb12b009db384226ea7f0.svg",
-    "index.html": "/J-s-Island/index.html",
     "static/media/cssLogo.svg": "/J-s-Island/static/media/cssLogo.0c654b793ccd3dfaf4d18307c861d1f5.svg",
     "static/media/htmlLogo.svg": "/J-s-Island/static/media/htmlLogo.bffe70aa8b2ef15066798451740d2d44.svg",
     "static/media/closeX.svg": "/J-s-Island/static/media/closeX.adfc33bd57c12edcb847c9940f0ceb64.svg",
     "main.cfa0331a.css.map": "/J-s-Island/static/css/main.cfa0331a.css.map",
-    "main.676f18e5.js.map": "/J-s-Island/static/js/main.676f18e5.js.map"
+    "main.14a5d3d1.js.map": "/J-s-Island/static/js/main.14a5d3d1.js.map"
   },
   "entrypoints": [
     "static/css/main.cfa0331a.css",
-    "static/js/main.676f18e5.js"
+    "static/js/main.14a5d3d1.js"
   ]
 }
