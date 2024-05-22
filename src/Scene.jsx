@@ -19,7 +19,7 @@ export function Scene() {
 
   useEffect(() => {
     if (start && isPlaying) {
-      // mp3Play.play();
+      mp3Play.play();
     } else {
       mp3Play.pause();
     }
@@ -39,13 +39,17 @@ export function Scene() {
   }, [start]);
 
     useEffect(() => {
+      console.log('asdf::', cameraRef.current)
         if (cameraRef.current) {
             gsap.to(cameraRef.current.position, {
                 duration: 5.9,
                 x: 4,
                 y: 10,
                 z: 10,
-                ease: "power4.inOut"
+                ease: "power4.inOut",
+                // onComplete: () => {
+                //   cameraRef.current.lookAt(new THREE.Vector3(0, 0, 0)); // 밑을 보도록 설정
+                // }
             });
         }
     }, [cameraRef.current]);
@@ -66,8 +70,7 @@ export function Scene() {
           autoUpdate: true,
           type: THREE.PCFSoftShadowMap}}
         camera={{
-          // position: [-1, 1.2, 5],
-          position: [4, 10, 10],
+          position: [-1, 1.2, 5],
           isPerspectiveCamera: true,
           near: 0.01,
           far: 1000,
@@ -78,7 +81,11 @@ export function Scene() {
           <Physics>
 
             {/* controls */}
-            <OrbitControls />
+            <OrbitControls
+              enableZoom={false}
+              enableRotate={false}
+              mouseButtons={false}
+            />
 
             {/* light */}
             <ambientLight intensity={.5} color={'white'}  />
@@ -87,21 +94,21 @@ export function Scene() {
               shadow-mapSize={[1024 * 4, 1024 * 4]}
               castShadow
               color='#ffffff'
-              intensity={.2}
+              intensity={.3}
               position={[0, 20, 0]}
               angle={THREE.MathUtils.degToRad(60) * .2}
               shadow-blurSample={32}
             />
 
             <directionalLight
-              intensity={1.5}
+              intensity={1.7}
               color={'#ffffff'}
               position={[-40, 30, -30]}
               castShadow
             />
 
             <directionalLight
-              intensity={.3}
+              intensity={.4}
               color={'#ffffff'}
               position={[40, -30, 30]}
             />
@@ -114,7 +121,7 @@ export function Scene() {
         </Suspense>
       </Canvas>
 
-      {/* <LoadingScreen started={start} isPlaying={isPlaying} onStarted={() => setStart(true)} /> */}
+      <LoadingScreen started={start} isPlaying={isPlaying} onStarted={() => setStart(true)} />
     </>
   )
 }
