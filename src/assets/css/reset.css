@@ -135,6 +135,29 @@ ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제�
     text-indent: -9999px;
 }
 
+.fr1 {font-size: .1rem;}
+.fr2 {font-size: .2rem;}
+.fr3 {font-size: .3rem;}
+.fr4 {font-size: .4rem;}
+.fr5 {font-size: .5rem;}
+.fr6 {font-size: .6rem;}
+.fr7 {font-size: .7rem;}
+.fr8 {font-size: .8rem;}
+.fr9 {font-size: .9rem;}
+.fr10 {font-size: 1rem;}
+.fr20 {font-size: 2rem;}
+.fr30 {font-size: 3rem;}
+.fr40 {font-size: 4rem;}
+.fr50 {font-size: 5rem;}
+.fr60 {font-size: 6rem;}
+.fr70 {font-size: 7rem;}
+.fr80 {font-size: 8rem;}
+.fr90 {font-size: 9rem;}
+.fr100 {font-size: 10rem;}
+
+
+
+
 .f6 {font-size: 6px;}
 .f7 {font-size: 7px;}
 .f8 {font-size: 8px;}
@@ -202,3 +225,14 @@ ir_so : 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제�
 .mb40 {margin-bottom: 40px;}
 .mb45 {margin-bottom: 45px;}
 .mb50 {margin-bottom: 50px;}
+
+.ml5 {margin-left: 5px;}
+.ml10 {margin-left: 10px;}
+.ml15 {margin-left: 15px;}
+.ml20 {margin-left: 20px;}
+.ml25 {margin-left: 25px;}
+.ml30 {margin-left: 30px;}
+.ml35 {margin-left: 35px;}
+.ml40 {margin-left: 40px;}
+.ml45 {margin-left: 45px;}
+.ml50 {margin-left: 50px;}

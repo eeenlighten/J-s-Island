@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import BoxLambert from '../component/shape/BoxLambert';
-import { useFrame, extend, useThree } from '@react-three/fiber';
-import * as THREE from "three";
-import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import Portal from "../component/decoration/Portal";
 import Bridge from '../component/decoration/Bridge';
 import Stairs from '../component/decoration/Stairs';
@@ -31,7 +28,8 @@ function Island() {
           <BoxLambert pos={[0, 0.085, 0]} args={[1.3, 0.05, 1.3]} color="#36591C" isRecShadow={true} />
           <BoxLambert pos={[0, 0, 0]} args={[1.3, .12, 1.3]} color="#272A15" />
           
-          <Stairs pos={[.05, .13, .117]} args={[0.5, 0.04, 0.13]} />
+          <Stairs pos={[.05, .13, .117]} args={[0.5, 0.15, 0.18]} />
+          <Stairs rot={[0, 0.2, 0]} pos={[.07, .13, .3]} args={[0.4, 0.04, 0.1]} />
 
           <Road pos={[0.02, 0.11, 0.4]} args={[0.15, 0.015, 0.15]} />
       </group>
@@ -52,7 +50,7 @@ function Island() {
 
         <Portal pos={[-0.65, .55, -0.65]} />
 
-        <Chicken pos={[.2, .215, -.5]} rot={[0, -Math.PI / 4, 0]} />
+        <Chicken pos={[.2, .195, -.5]} rot={[0, -Math.PI / 4, 0]} />
       </group>
 
       {/* third island */}
@@ -62,9 +60,9 @@ function Island() {
           <BoxLambert pos={[0.3, 0, 0.3]} args={[1.7, .37, 1.7]} color="#272A15" />
         </group>
 
-        <group position={[-0.01, -0.06, -2]} rotation={[0, Math.PI / 2, 0]}>
+        <group position={[-0.01, -0.1, -2]} rotation={[0, Math.PI / 2, 0]}>
           <Stairs pos={[-0.1, .54, -0.98]} args={[0.8, 0.1, 0.4]} />
-          <Stairs pos={[0.05, .59, -1]} args={[0.7, 0.15, 0.2]} rot={[0, -0.2, 0]} />
+          <Stairs pos={[0.05, .57, -1]} args={[0.7, 0.15, 0.2]} rot={[0, -0.2, 0]} />
         </group>
 
         <Road pos={[-0.1, 0.47, -1.3]} rot={[0, 0.3, 0]} args={[0.17, 0.015, 0.17]} />
@@ -75,7 +73,7 @@ function Island() {
       
         <Portal pos={[-0.3, .7, -2.6]} rot={[0, Math.PI / 2, 0]} />
 
-        <Chicken pos={[.2, .355, -2]} rot={[0, 0, 0]} />
+        <Chicken pos={[.2, .335, -2]} rot={[0, 0, 0]} />
 
         <Tree sca={[.7, 1.3, .7]} pos={[-1.2, .4, -3.7]} kind='cone' />
         <Tree sca={[.5, 1.1, .5]} pos={[-1.2, .47, -5.2]} kind='cone' />
@@ -88,19 +86,19 @@ function Island() {
       </group>
 
       {/* last Island */}
-      <group position={[-2.3, 0.27, -2.3]}>
+      <group position={[-2.3, 0.20, -2.3]}>
         <BoxLambert pos={[0.3, 0.335, 0.3]} args={[1.9, 0.15, 1.9]} color="#8A8B37" isRecShadow={true} />
         <BoxLambert pos={[0.3, 0, 0.3]} args={[1.9, .52, 1.9]} color="#272A15" />
 
-        <Road pos={[1, 0.42, .25]} rot={[0, 0.2, 0]} args={[0.22, 0.015, 0.22]} />
-        <Road pos={[0.55, 0.42, .3]} rot={[0, -.2, 0]} args={[0.26, 0.015, 0.26]} />
-        <Road pos={[0.2, 0.42, .2]} rot={[0, .1, 0]} args={[0.22, 0.015, 0.22]} />
-        <Road pos={[-0.15, 0.42, .4]} rot={[0, -.1, 0]} args={[0.22, 0.015, 0.22]} />
+        <Road pos={[1, 0.415, .25]} rot={[0, 0.2, 0]} args={[0.22, 0.015, 0.22]} />
+        <Road pos={[0.55, 0.415, .3]} rot={[0, -.2, 0]} args={[0.26, 0.015, 0.26]} />
+        <Road pos={[0.2, 0.415, .2]} rot={[0, .1, 0]} args={[0.22, 0.015, 0.22]} />
+        <Road pos={[-0.15, 0.415, .4]} rot={[0, -.1, 0]} args={[0.22, 0.015, 0.22]} />
 
         <Portal pos={[-0.4, .64, 0.1]} boxPos={[0, 0, 0]} />
         
-        <Sheep pos={[.1, .075, -.15]} rot={[0, Math.PI / 3, 0]} />
-        <Sheep pos={[.8, .075, .8]} rot={[0, -Math.PI / 3, 0]} />
+        <Sheep pos={[.1, .022, -.15]} rot={[0, Math.PI / 3, 0]} />
+        <Sheep pos={[.8, .022, .8]} rot={[0, -Math.PI / 3, 0]} />
 
         <Tree sca={[.8, 1.5, .8]} pos={[-.5, .32, -.5]} kind='cone' />
         <Tree sca={[.7, 1.3, .7]} pos={[-.5, .36, 1.4]} kind='cone' />

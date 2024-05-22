@@ -19,7 +19,7 @@ export const useInput = () => {
   const findKey = (key) => keys[key];
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown= (e) => {
       setInput((m) => ({ ...m, [findKey(e.code)]: true }));
     };
     const handleKeyUp = (e) => {

@@ -1,21 +1,38 @@
-import { useBox } from '@react-three/cannon';
+import { RigidBody, CuboidCollider } from "@react-three/rapier";
+import React, { useCallback, useState } from 'react';
+import Popup from "../Popup";
 
-const debug = true;
 
-export function ColliderBox({ position, scale }) {
-  useBox(() => ({
-    args: scale,
-    position,
-    type: 'Static',
-  }));
-  
+export function ColliderBox({ position, scale, rotation, isCollider, order }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleCollisionEnter = useCallback((e) => {
+    if (isCollider) {
+      setIsOpen(true);
+    }
+  }, [isCollider]);
+
+  const handleCollisionExit = useCallback((e) => {
+    if (isCollider) {
+      setIsOpen(false);
+    }
+  }, [isCollider]);
+
 
   return (
-    debug && (
-      <mesh position={position}>
-        <boxGeometry args={scale} />
-        <meshBasicMaterial transparent={true} opacity={0.25} />
-      </mesh>
-    )
+    <>
+      <group>
+        <RigidBody
+          colliders={false}
+          type="fixed"
+          lockRotations
+          onCollisionEnter={handleCollisionEnter}
+          onCollisionExit={handleCollisionExit}
+        >
+          <CuboidCollider position={position} args={scale} rotation={rotation} />
+        </RigidBody>
+      </group>
+      { isOpen && <Popup order={order} isOpen={isOpen} /> }
+    </>
   )
 }

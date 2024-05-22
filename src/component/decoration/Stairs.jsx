@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import BoxLambert from '../shape/BoxLambert';
 
 function Stairs({ pos, args, rot }) {
@@ -12,4 +12,4 @@ function Stairs({ pos, args, rot }) {
   )
 }
 
-export default Stairs
+export default Stairs;

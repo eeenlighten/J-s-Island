@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Stone({ args, pos, rot }) {
 
@@ -12,4 +12,4 @@ function Stone({ args, pos, rot }) {
   )
 }
 
-export default Stone
+export default Stone;

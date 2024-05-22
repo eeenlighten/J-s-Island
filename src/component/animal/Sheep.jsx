@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { useFrame } from '@react-three/fiber';
 
 
 function Sheep({ pos, rot }) {
@@ -67,8 +66,7 @@ function Sheep({ pos, rot }) {
 
   return (
     <>
-      {/* <group position={pos} rotation={rot} scale={[0.23, 0.23, 0.23]} ref={jumpRef}> */}
-      <group position={pos} rotation={rot} scale={[0.23, 0.23, 0.23]} ref={jumpRef}>
+      <group position={pos} rotation={rot} scale={[0.27, 0.27, 0.27]} ref={jumpRef}>
         {/* body */}
         <mesh position={[0, 2, 0]} castShadow>
           <boxGeometry args={[.5, .5, .5]} />

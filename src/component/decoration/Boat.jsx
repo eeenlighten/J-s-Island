@@ -23,7 +23,7 @@ function Boat() {
 
   return (
     <group ref={move} scale={[.1, .1, .1]} castShadow receiveShadow>
-      <primitive object={mesh} rotation={[0, Math.PI / 1, 0]} position={[-8, .83, 19]} />
+      <primitive object={mesh} rotation={[0, Math.PI / 1, 0]} position={[-8, .85, 19]} />
     </group>
   )
 }

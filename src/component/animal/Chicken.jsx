@@ -55,7 +55,7 @@ function Chicken({ pos, rot }) {
 
   return (
     <>
-      <group position={pos} rotation={rot} scale={[0.1, 0.1, 0.1]}>
+      <group position={pos} rotation={rot} scale={[0.12, 0.12, 0.12]}>
         <group  ref={chickenRef}>
           {/* body */}
           {bodyParts.map((e, i) => (

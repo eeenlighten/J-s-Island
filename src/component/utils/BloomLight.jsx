@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
-import BoxLambert from '../shape/BoxLambert';
-import { Bloom, EffectComposer } from '@react-three/postprocessing';
+import { Bloom, BrightnessContrast, DotScreen, EffectComposer, HueSaturation } from '@react-three/postprocessing';
+import { useEffect, useRef, useState } from 'react';
 
 
 function BloomLight() {
 
+
   return (
     <>
-      <EffectComposer disableNormalPass enabled={true} castShadow>
+      <EffectComposer disableNormalPass>
         <Bloom
-          intensity={1}
+          intensity={1.2}
           mipmapBlur={true}
           luminanceThreshold={1}
           luminanceSmoothing={0}

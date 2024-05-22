@@ -8,3 +8,6 @@
 
 /* popup */
 @import "./assets/css/popup.css";
+
+/* loadingScreen */
+@import "./assets/css/loadingScreen.css";

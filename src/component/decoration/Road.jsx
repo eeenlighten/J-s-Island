@@ -1,5 +1,5 @@
-import React from 'react'
-import BoxLambert from '../shape/BoxLambert'
+import React from 'react';
+import BoxLambert from '../shape/BoxLambert';
 
 function Road({ pos, args, rot }) {
   return (
@@ -9,4 +9,4 @@ function Road({ pos, args, rot }) {
   )
 }
 
-export default Road
+export default Road;

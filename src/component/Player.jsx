@@ -1,7 +1,7 @@
-import { act, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { useAnimations, useGLTF, OrbitControls } from '@react-three/drei';
+import { useAnimations, useGLTF } from '@react-three/drei';
+import { CapsuleCollider, RigidBody } from "@react-three/rapier";
 import { useInput } from './hooks/useInput';
 import * as THREE from 'three';
 
@@ -37,11 +37,13 @@ const directionOffset = ({ forward, backward, left, right }) => {
 }
 
 function Player() {
+  const rigidbody = useRef();
+  const playerRef = useRef();
   const { forward, backward, left, right } = useInput();
   const model = useGLTF( process.env.PUBLIC_URL + "/models/player.glb");
   const { actions } = useAnimations(model.animations, model.scene);
 
-  model.scene.scale.set(.0022, .0022, .0022);
+  model.scene.scale.set(.0024, .0024, .0024);
 
   model.scene.traverse((object) => {
     if(object.isMesh) {
@@ -71,7 +73,10 @@ function Player() {
     }
   }, [forward, backward, left, right]);
 
+
   useFrame((state, delta) => {
+    const impulse = { x: 0, y: 0, z: 0 };
+
     if(currentAction.current == 'running') {
       let angleYCameraDirection = Math.atan2(
         camera.position.x - model.scene.position.x,
@@ -101,26 +106,31 @@ function Player() {
       // run velocity
       const velocity = currentAction.current == 'running' ? 1 : 0;
 
-      // move model
+      // move
       const moveX = runDirection.x * velocity * delta;
       const moveZ = runDirection.z * velocity * delta;
-      model.scene.position.x += moveX;
-      model.scene.position.z += moveZ;
+
+      impulse.x += moveX * 0.17;
+      impulse.z += moveZ * 0.17;
+
+      rigidbody.current.applyImpulse(impulse, true);
     }
   });
 
-
   return (
     <>
-      {/* <primitive position={[0, 0.17, 1.8]} object={model.scene} /> */}
       <group>
-        <primitive position={[0, 0.17, 1.8]} object={model.scene} />
-        {/* <mesh scale={[.2, .2, .2]} rotation-x={-Math.PI / 2} position={[0, 0.35, 1.8]}>
-          <planeGeometry />
-          <meshBasicMaterial />
-        </mesh> */}
+        <RigidBody
+          enabledRotations={[false, false, false]}
+          colliders={false}
+          linearDamping={12}
+          lockRotations
+          ref={rigidbody}
+        >
+          <CapsuleCollider args={[0.1, 0.1]} position={[0, 1.2, 1.8]} />
+          <primitive ref={playerRef} position={[0, 1, 1.8]} object={model.scene} />
+        </RigidBody>
       </group>
-
     </>
   )
 }
