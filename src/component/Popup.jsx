@@ -84,6 +84,11 @@ function Popup({ order, isOpen }) {
           <span className='fw600'>과외 스터디 </span>
           <br /><br />
           <span className='fr9'>- 리액트, 뷰, php, 자바스크립트 기술 습득</span>
+          <br />
+          <span className='fr9'>- 포트폴리오 제작 </span>
+          <a href='https://eeenlighten.github.io/portfolio/' className='ml5' target='_blank'>
+            <InternetLogo />
+          </a>
           
           <br /><br /><br />
 
