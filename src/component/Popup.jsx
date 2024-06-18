@@ -47,16 +47,28 @@ function Popup({ order, isOpen }) {
           <span className='fw600'>앱스쿼드 </span>
           <span className='fr7'>앱개발/주임</span>
           <br /><br />
-          <span className='fr9'>- 자바와 스프링 부트를 활용하여 관리자 페이지 설계, 개발 및 유지 보수하였습니다.</span>
-          <br />
-          <span className='fr9'>- 데이터베이스 테이블 구조 설계 및 구축하였습니다.</span>
+          <span>프론트엔드 업무</span>
           <br />
           <span className='fr9'>- 리액트 네이티브를 활용하여 퍼블리싱 및 API 설계, 연동을 하였습니다.</span>
           <br />
-          <span className='fr9'>- 데이팅 어플 리미티드를 소개하는 웹사이트 제작을 하였습니다.</span>
+          <span className='fr9'>- Redux를 활용하여 회원 정보의 일관성을 유지하고 다양한 컴포넌트에서 일관된 데이터 접근 및 수정을 가능하게 하여 개발 효율성을 높였습니다.</span>
+          <br />
+          <span className='fr9'>- 양방향 통신을 지원하는 WebSocket API를 이용하여 서버와의 연결을 설정하고, 메세지 이벤트를 처리하는 클라이언트 측 코드를 구현하였습니다.</span>
           <br />
           <span className='fr9'>- 프로젝트 팀원들과 협업하여 기능 개발 및 버그 수정에 기여하였습니다.</span>
           <br />
+          <span className='fr9'>- 데이팅 어플 리미티드를 소개하는 웹사이트 제작을 하였습니다.</span>
+          <br /><br />
+          <span>백엔드 업무</span>
+          <br />
+          <span className='fr9'>- 자바와 스프링 부트를 사용하여 MVC 패턴에 따라 관리자 페이지 설계, 개발 및 유지 보수하였고 이를 바탕으로 RESTful API를 설계하고 구현하였습니다.</span>
+          <br />
+          <span className='fr9'>- MariaDB를 사용하여 데이터베이스 테이블 구조 설계 및 구축하였고 트랜잭션 관리 기능을 이용해 데이터 일관성을 보장하였습니다.</span>
+          <br />
+          <span className='fr9'>- MySQL을 이용하여 복잡한 쿼리를 최적화하고, 인덱스를 설계하여 검색 성능을 최적화하였습니다.</span>
+          <br />
+          <span className='fr9'>- MyBatis의 XML 매퍼를 활용하여 동적 쿼리를 작성하고 데이터베이스 접근 코드를 단순화하였습니다.</span>
+          <br /><br />
           <a href='https://play.google.com/store/apps/details?id=com.appsquad.limeeted&hl=ko_KR' target='_blank'>
           - <GoogleLogo />
           </a>
