@@ -17,6 +17,9 @@ export function Scene() {
   const [isPlaying, setIsPlaying] = useState(true);
   const cameraRef = useRef();
 
+  const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  console.log('platform::', navigator.platform.toUpperCase());
+
   useEffect(() => {
     if (start && isPlaying) {
       mp3Play.play();
@@ -38,17 +41,38 @@ export function Scene() {
     };
   }, [start]);
 
-    useEffect(() => {
-        if (cameraRef.current) {
-            gsap.to(cameraRef.current.position, {
-                duration: 5.9,
-                x: 4,
-                y: 10,
-                z: 10,
-                ease: "power4.inOut",
-            });
-        }
-    }, [cameraRef.current]);
+  useEffect(() => {
+      if (cameraRef.current) {
+          gsap.to(cameraRef.current.position, {
+              duration: 5.9,
+              x: 4,
+              y: 10,
+              z: 10,
+              ease: "power4.inOut",
+          });
+      }
+  }, [cameraRef.current]);
+
+  if (isMac) {
+    return (
+      <div
+        style={{
+          backgroundColor: "black",
+          color: "white",
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "24px",
+          textAlign: "center",
+        }}
+      >
+        <p>현재 이 사이트는 Mac 환경을 지원하지 않습니다.<br />
+        Windows에서 이용해 주시기 바랍니다.<br />
+        불편을 드려 죄송합니다.</p>
+      </div>
+    );
+  }
 
   return (
     <>

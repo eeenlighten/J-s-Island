@@ -43,11 +43,72 @@ function Popup({ order, isOpen }) {
       title: 'Career'
       , desc: (
         <>
-          <span className='fr9'>2022.11 ~ 2024.03 </span>
-          <span className='fw600'>앱스쿼드 </span>
-          <span className='fr7'>앱개발/주임</span>
+          <span className='fr11'>2024.10 ~ </span>
+          <span className='fw600 fr11'>우주몬스터 </span>
+          <span className='fr8'>앱개발/운영자</span>
+          <br />
+          <span className='fw600'>찰나(불교 어플)</span>
+          <br />
+          <br />
+          <span>디자인</span>
+          <br />
+          <br />
+          <span className='fr9'>- 어플리케이션 화면 설계 및 전체 UI/UX 디자인 제작하였습니다.</span>
+          <br />
+          <br />
+          <span>프론트엔드</span>
+          <br />
+          <br />
+          <span className='fr9'>- 리액트 네이티브로 화면 퍼블리싱 작업을 수행하였습니다.</span>
+          <br />
+          <span className='fr9'>- 자체 개발한 API와 OpenAI의 API 연동 작업하였습니다.</span>
+          <br />
+          <span className='fr9'>- Firebase와 연동하여 소셜 로그인 기능 개발하였습니다.</span>
+          <br />
+          <br />
+          <span>백엔드</span>
+          <br />
+          <br />
+          <span className='fr9'>- MySQL을 기반으로 데이터베이스 테이블 설계 및 구축하였습니다.</span>
+          <br />
+          <span className='fr9'>- Node.js를 활용하여 RESTful API 개발 및 데이터 처리 로직 구현하였습니다.</span>
+          <br />
+          <span className='fr9'>- JWT(JSON Web Token) 기반 인증 시스템 설계 및 구현하였습니다.</span>
+          <br />
+          <br />
+          <span>서버</span>
+          <br />
+          <br />
+          <span className='fr9'>- 네이버 클라우드 플랫폼을 이용해 서버 구축 및 배포하였습니다.</span>
+          <br />
+          <br />
+          <p>링크 :&nbsp;
+            <a href='https://play.google.com/store/apps/details?id=com.chalna.cn&hl=ko' target='_blank'>
+              <GoogleLogo />
+            </a>
+          </p>
+
+          <br /><br /><br />
+
+          <span className='fr11'>2024.09 ~ 2024.12 </span>
+          <span className='fw600 fr11'>앱스쿼드 </span>
+          <span className='fr8'>앱개발/프리랜서</span>
+          <br />
+          <span className='fw600'>리미티드(데이팅 어플)</span>
           <br /><br />
-          <span>프론트엔드 업무</span>
+          <span className='fr9'>- 리액트 네이티브로 리뉴얼된 디자인 퍼블리싱 작업 및 API 통신을 통해 데이터 연동을 구현했습니다.</span>
+          
+          <br /><br /><br />
+
+          <span className='fr11'>2022.11 ~ 2024.03 </span>
+          <span className='fw600 fr11'>앱스쿼드 </span>
+          <span className='fr8'>앱개발/주임</span>
+          <br />
+          <span className='fw600'>리미티드(데이팅 어플)</span>
+          <br />
+          <br />
+          <span>프론트엔드</span>
+          <br />
           <br />
           <span className='fr9'>- 리액트 네이티브를 활용하여 퍼블리싱 및 API 설계, 연동을 하였습니다.</span>
           <br />
@@ -55,11 +116,11 @@ function Popup({ order, isOpen }) {
           <br />
           <span className='fr9'>- 양방향 통신을 지원하는 WebSocket API를 이용하여 서버와의 연결을 설정하고, 메세지 이벤트를 처리하는 클라이언트 측 코드를 구현하였습니다.</span>
           <br />
-          <span className='fr9'>- 프로젝트 팀원들과 협업하여 기능 개발 및 버그 수정에 기여하였습니다.</span>
-          <br />
           <span className='fr9'>- 데이팅 어플 리미티드를 소개하는 웹사이트 제작을 하였습니다.</span>
-          <br /><br />
-          <span>백엔드 업무</span>
+          <br />
+          <br />
+          <span>백엔드</span>
+          <br />
           <br />
           <span className='fr9'>- 자바와 스프링 부트를 사용하여 MVC 패턴에 따라 관리자 페이지 설계, 개발 및 유지 보수하였고 이를 바탕으로 RESTful API를 설계하고 구현하였습니다.</span>
           <br />
@@ -69,14 +130,15 @@ function Popup({ order, isOpen }) {
           <br />
           <span className='fr9'>- MyBatis의 XML 매퍼를 활용하여 동적 쿼리를 작성하고 데이터베이스 접근 코드를 단순화하였습니다.</span>
           <br /><br />
-          <a href='https://play.google.com/store/apps/details?id=com.appsquad.limeeted&hl=ko_KR' target='_blank'>
-          - <GoogleLogo />
-          </a>
-          <a href='https://www.limeeted.com' className='ml5' target='_blank'>
-            <InternetLogo />
-          </a>
-          <br /><br />
-          <span className='fr9 fw600'>기술스택</span>
+          <p>링크 :&nbsp;
+            <a href='https://play.google.com/store/apps/details?id=com.appsquad.limeeted&hl=ko_KR' target='_blank'>
+              <GoogleLogo />
+            </a>
+            <a href='https://www.limeeted.com' className='ml5' target='_blank'>
+              <InternetLogo />
+            </a>
+          </p>
+          {/* <span className='fr9 fw600'>기술스택</span>
           <br />
           <span className='logoArea mt10'>
             <span><JavaLogo /></span>
@@ -88,12 +150,12 @@ function Popup({ order, isOpen }) {
             <span className='mt10'><TsLogo /></span>
             <span className='mt10'><MysqlLogo /></span>
             <span className='mt10'><MariaDbLogo /></span>
-          </span>
+          </span> */}
           
-          <br /><br />
+          <br /><br /><br />
 
-          <span className='fr9'>2022. 07 ~ 2022. 08 </span>
-          <span className='fw600'>과외 스터디 </span>
+          <span className='fr11'>2022. 07 ~ 2022. 08 </span>
+          <span className='fw600 fr11'>과외 스터디 </span>
           <br /><br />
           <span className='fr9'>- 리액트, 뷰, php, 자바스크립트 기술 습득</span>
           <br />
@@ -104,8 +166,8 @@ function Popup({ order, isOpen }) {
           
           <br /><br /><br />
 
-          <span className='fr9'>2021. 04 ~ 2021. 07 </span>
-          <span className='fw600'>웹디자인/웹퍼블리셔 [과정평가형] </span><span className='fr7'>이젠아카데미</span>
+          <span className='fr11'>2021. 04 ~ 2021. 07 </span>
+          <span className='fw600 fr11'>웹디자인/웹퍼블리셔 [과정평가형] </span><span className='fr7'>이젠아카데미</span>
           <br /><br />
           <span className='fr9'>- 웹디자인 트렌드에 맞춘 교육과정(웹 표준, 반응형 웹 등)</span>
           <br />
