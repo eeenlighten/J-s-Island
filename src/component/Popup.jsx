@@ -32,9 +32,9 @@ function Popup({ order, isOpen }) {
           감사합니다.
           <br /><br />
 
-          <a href='https://github.com/eeenlighten' target='_blank'>
+          {/* <a href='https://github.com/eeenlighten' target='_blank'>
             <GithubLogo fill='#161614' />
-          </a>
+          </a> */}
         </>
       )
       , order: 1
