@@ -81,6 +81,8 @@ function Popup({ order, isOpen }) {
           <br />
           <span className='fr9'>- 네이버 클라우드 플랫폼을 이용해 서버 구축 및 배포하였습니다.</span>
           <br />
+          <span className='fr9'>- 방화벽(ACG) 규칙을 적용하여 데이터 안정성 확보와 도메인과 서버의 IP를 연결하여 외부에서 접근 가능하도록 설정했습니다.</span>
+          <br />
           <br />
           <p>링크 :&nbsp;
             <a href='https://play.google.com/store/apps/details?id=com.chalna.cn&hl=ko' target='_blank'>
