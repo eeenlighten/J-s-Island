@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/J-s-Island/static/css/main.cfa0331a.css",
-    "main.js": "/J-s-Island/static/js/main.d885820c.js",
+    "main.css": "/J-s-Island/static/css/main.8a13008b.css",
+    "main.js": "/J-s-Island/static/js/main.6f391fca.js",
     "static/media/rnLogo.svg": "/J-s-Island/static/media/rnLogo.60c9c2f41924b4d6a8a1ae4314eb00e6.svg",
     "static/media/sbLogo.svg": "/J-s-Island/static/media/sbLogo.a9a7239fa85afdaa909bea2728e68d97.svg",
     "static/media/mysqlLogo.svg": "/J-s-Island/static/media/mysqlLogo.7746fe959c3aa4ec62b3489494749cf8.svg",
@@ -16,11 +16,11 @@
     "static/media/cssLogo.svg": "/J-s-Island/static/media/cssLogo.0c654b793ccd3dfaf4d18307c861d1f5.svg",
     "static/media/htmlLogo.svg": "/J-s-Island/static/media/htmlLogo.bffe70aa8b2ef15066798451740d2d44.svg",
     "static/media/closeX.svg": "/J-s-Island/static/media/closeX.adfc33bd57c12edcb847c9940f0ceb64.svg",
-    "main.cfa0331a.css.map": "/J-s-Island/static/css/main.cfa0331a.css.map",
-    "main.d885820c.js.map": "/J-s-Island/static/js/main.d885820c.js.map"
+    "main.8a13008b.css.map": "/J-s-Island/static/css/main.8a13008b.css.map",
+    "main.6f391fca.js.map": "/J-s-Island/static/js/main.6f391fca.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfa0331a.css",
-    "static/js/main.d885820c.js"
+    "static/css/main.8a13008b.css",
+    "static/js/main.6f391fca.js"
   ]
 }
