@@ -97,7 +97,9 @@ function Popup({ order, isOpen }) {
           <span className='fr8'>앱개발/프리랜서</span>
           <br />
           <span className='fw600'>리프(데이팅 어플)</span>
+          
           <br /><br />
+
           <span className='fr9'>- 리액트 네이티브로 리뉴얼된 디자인 퍼블리싱 작업 및 API 통신을 통해 데이터 연동을 구현했습니다.</span>
           
           <br /><br /><br />

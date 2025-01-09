@@ -18,6 +18,7 @@ export function Scene() {
   const cameraRef = useRef();
 
   const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   console.log('platform::', navigator.platform.toUpperCase());
 
   useEffect(() => {
@@ -53,7 +54,7 @@ export function Scene() {
       }
   }, [cameraRef.current]);
 
-  if (isMac) {
+  if (isMac || isMobile) {
     return (
       <div
         style={{
@@ -67,7 +68,7 @@ export function Scene() {
           textAlign: "center",
         }}
       >
-        <p>현재 이 사이트는 Mac 환경을 지원하지 않습니다.<br />
+        <p>현재 이 사이트는 {isMobile ? '모바일' : 'Mac'} 환경을 지원하지 않습니다.<br />
         Windows에서 이용해 주시기 바랍니다.<br />
         불편을 드려 죄송합니다.</p>
       </div>
