@@ -92,7 +92,7 @@ function Popup({ order, isOpen }) {
 
           <br /><br /><br />
 
-          <span className='fr11'>2024.09 ~ 2024.12</span>
+          <span className='fr11'>2024.09 ~ 2024.12 </span>
           <span className='fw600 fr11'>앱스쿼드 </span>
           <span className='fr8'>앱개발/프리랜서</span>
           <br />
@@ -102,7 +102,7 @@ function Popup({ order, isOpen }) {
 
           <span className='fr9'>- 리액트 네이티브로 리뉴얼된 디자인 퍼블리싱 작업 및 API 통신을 통해 데이터 연동을 구현했습니다.</span>
           
-          <br /><br /><br />
+          <br /><br /><br /><br />
 
           <span className='fr11'>2022.11 ~ 2024.03 </span>
           <span className='fw600 fr11'>앱스쿼드 </span>
@@ -168,7 +168,7 @@ function Popup({ order, isOpen }) {
             <InternetLogo />
           </a>
           
-          <br /><br /><br />
+          <br /><br /><br /><br />
 
           <span className='fr11'>2021. 04 ~ 2021. 07 </span>
           <span className='fw600 fr11'>웹디자인/웹퍼블리셔 [과정평가형] </span><span className='fr7'>이젠아카데미</span>
