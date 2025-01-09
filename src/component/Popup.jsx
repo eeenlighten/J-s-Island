@@ -92,7 +92,7 @@ function Popup({ order, isOpen }) {
 
           <br /><br /><br />
 
-          <span className='fr11'>2024.09 ~ 2024.12 </span>
+          <span className='fr11'>2024.09 ~ 2024.12</span>
           <span className='fw600 fr11'>앱스쿼드 </span>
           <span className='fr8'>앱개발/프리랜서</span>
           <br />
