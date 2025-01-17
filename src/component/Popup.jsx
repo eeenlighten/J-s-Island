@@ -14,6 +14,7 @@ import { ReactComponent as InternetLogo } from '../assets/images/internetLogo.sv
 import { ReactComponent as CloseX } from '../assets/images/closeX.svg';
 import { ReactComponent as MysqlLogo } from '../assets/images/mysqlLogo.svg';
 import { ReactComponent as MariaDbLogo } from '../assets/images/mariaDbLogo.svg';
+import { ReactComponent as AppleLogo } from '../assets/images/appleLogo.svg';
 
 
 function Popup({ order, isOpen }) {
@@ -88,6 +89,9 @@ function Popup({ order, isOpen }) {
             <a href='https://play.google.com/store/apps/details?id=com.chalna.cn&hl=ko' target='_blank'>
               <GoogleLogo />
             </a>
+            <a href='https://apps.apple.com/kr/app/%EC%B0%B0%EB%82%98/id6740244551' target='_blank' className='ml10'>
+              <AppleLogo />
+            </a>
           </p>
 
           <br /><br /><br />
@@ -138,7 +142,7 @@ function Popup({ order, isOpen }) {
             <a href='https://play.google.com/store/apps/details?id=com.appsquad.limeeted&hl=ko_KR' target='_blank'>
               <GoogleLogo />
             </a>
-            <a href='https://www.limeeted.com' className='ml5' target='_blank'>
+            <a href='https://www.limeeted.com' className='ml10' target='_blank'>
               <InternetLogo />
             </a>
           </p>
